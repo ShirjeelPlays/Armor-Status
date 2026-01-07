@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "armorstatus",
+	"version": "${version}",
+	"name": "ArmorStatus",
+	"description": "Displays armor durability as a percentage on the HUD.",
+	"authors": [
+		"Shirjeel_plays"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/user/MineBoost",
+		"sources": "https://github.com/ShirjeelPlays/Armor-Status"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/armorstatus/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"com.example.shirjeel_plays.armorstatus.ArmorStatus"
+		],
+		"client": [
+			"com.example.shirjeel_plays.armorstatus.client.ArmorStatusClient"
+		],
+		"modmenu": [
+			"com.example.shirjeel_plays.armorstatus.compat.ModMenuIntegration"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
